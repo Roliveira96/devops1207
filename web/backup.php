@@ -2,12 +2,12 @@
 require('header.php');
 
 # php5 
-#mysql_connect('192.168.15.20', 'root', 'AllSafe0!'); // Conecta com o banco de dados
+#mysql_connect('db', 'root', 'AllSafe0!'); // Conecta com o banco de dados
 #mysql_select_db('backup'); // Seleciona o banco certo
 #$dados = mysql_query('SELECT * FROM log'); // Pega todos os registros da tabela log
 
 # php7
-$mysqli = new mysqli('192.168.1.20', 'express', 'AllSafe0!', 'backup');
+$mysqli = new mysqli('db', 'express', 'AllSafe0!', 'backup');
 $dados = $mysqli->query("SELECT * FROM log");
 ?>
 	<div id="grid_content">
