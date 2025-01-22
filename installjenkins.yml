@@ -11,7 +11,7 @@
           - ca-certificates
           - curl
           - gnupg2
-          - openjdk-11-jdk
+          - openjdk-17-jdk
           - software-properties-common
         state: present
 
